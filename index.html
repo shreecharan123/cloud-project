@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sample HTML and CSS Project</title>
+
+    <!-- ===================== -->
+    <!-- Internal CSS Styling  -->
+    <!-- ===================== -->
+    <style>
+        /* Reset default browser styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background-color: #f4f6f8;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Header section */
+        header {
+            background-color: #1e90ff;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 16px;
+        }
+
+        /* Navigation bar */
+        nav {
+            background-color: #333;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 10px;
+            display: block;
+        }
+
+        nav ul li a:hover {
+            background-color: #1e90ff;
+            border-radius: 4px;
+        }
+
+        /* Main container */
+        .container {
+            width: 90%;
+            max-width: 1000px;
+            margin: 20px auto;
+        }
+
+        /* Section styles */
+        section {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 6px;
+        }
+
+        section h2 {
+            color: #1e90ff;
+            margin-bottom: 10px;
+        }
+
+        section p {
+            margin-bottom: 10px;
+        }
+
+        /* Card layout */
+        .card-wrapper {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            width: 30%;
+            min-width: 250px;
+            padding: 15px;
+            border-radius: 6px;
+        }
+
+        .card h3 {
+            margin-bottom: 8px;
+            color: #333;
+        }
+
+        /* Button style */
+        .btn {
+            display: inline-block;
+            background-color: #1e90ff;
+            color: white;
+            padding: 10px 16px;
+            border-radius: 4px;
+            text-decoration: none;
+            margin-top: 10px;
+        }
+
+        .btn:hover {
+            background-color: #0b65c2;
+        }
+
+        /* Table styling */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        table th, table td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: center;
+        }
+
+        table th {
+            background-color: #1e90ff;
+            color: white;
+        }
+
+        /* Form styling */
+        form label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        form input, form textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+
+        footer small {
+            color: #ccc;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>My Sample Website</h1>
+        <p>HTML and CSS Example Project</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main content -->
+    <div class="container">
+
+        <section>
+            <h2>About This Page</h2>
+            <p>
+                This is a sample HTML page created using internal CSS.
+                It demonstrates common elements such as headings, paragraphs,
+                navigation menus, cards, tables, and forms.
+            </p>
+            <a href="#" class="btn">Read More</a>
+        </section>
+
+        <section>
+            <h2>Our Services</h2>
+            <div class="card-wrapper">
+                <div class="card">
+                    <h3>Web Design</h3>
+                    <p>We create clean and responsive web designs.</p>
+                </div>
+                <div class="card">
+                    <h3>Development</h3>
+                    <p>We build fast and functional websites.</p>
+                </div>
+                <div class="card">
+                    <h3>Support</h3>
+                    <p>We provide ongoing technical support.</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Price List</h2>
+            <table>
+                <tr>
+                    <th>Service</th>
+                    <th>Price</th>
+                    <th>Duration</th>
+                </tr>
+                <tr>
+                    <td>Basic Website</td>
+                    <td>$100</td>
+                    <td>7 Days</td>
+                </tr>
+                <tr>
+                    <td>Advanced Website</td>
+                    <td>$250</td>
+                    <td>14 Days</td>
+                </tr>
+                <tr>
+                    <td>Maintenance</td>
+                    <td>$50</td>
+                    <td>Monthly</td>
+                </tr>
+            </table>
+        </section>
+
+        <section>
+            <h2>Contact Us</h2>
+            <form>
+                <label>Name</label>
+                <input type="text" placeholder="Enter your name">
+
+                <label>Email</label>
+                <input type="email" placeholder="Enter your email">
+
+                <label>Message</label>
+                <textarea rows="4" placeholder="Write your message"></textarea>
+
+                <a href="#" class="btn">Submit</a>
+            </form>
+        </section>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 My Sample Website</p>
+        <small>Designed using HTML and CSS</small>
+    </footer>
+
+</body>
+</html>
